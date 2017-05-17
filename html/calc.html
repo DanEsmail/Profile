@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/calc.css">
+  </head>
+  <body>
+    <div class="container-fluid box">
+      <div id="calc-outside">
+        <div id="display">
+          <p id="equation"><br></p>
+          <p id="answer"></p>
+        </div>
+        <div id="input-box">
+          <div class="button-line">
+            <button class="calcButton lead-button delete" id="clear">Clear</button>
+            <button class="calcButton delete" id="back">back</button>
+            <button class="calcButton operator" id="modulus">%</button>
+            <button class="calcButton  operator" id="divide">/</button>
+          </div>
+          <div class="button-line">
+            <button class="calcButton number-button lead-button" id="7">7</button>
+            <button class="calcButton number-button" id="8">8</button>
+            <button class="calcButton number-button" id="9">9</button>
+            <button class="calcButton  operator" id="multiply">*</button>
+          </div>
+          <div class="button-line">
+            <button class="calcButton number-button lead-button" id="4">4</button>
+            <button class="calcButton number-button" id="5">5</button>
+            <button class="calcButton number-button" id="6">6</button>
+            <button class="calcButton  operator" id="minus">-</button>
+          </div>
+          <div class="button-line">
+            <button class="calcButton number-button lead-button" id="1">1</button>
+            <button class="calcButton number-button" id="2">2</button>
+            <button class="calcButton number-button" id="3">3</button>
+            <button class="calcButton  operator" id="add">+</button>
+          </div>
+          <div class="button-line">
+            <button class="calcButton number-button lead-button" id="decimal">.</button>
+            <button class="calcButton number-button" id="0">0</button>
+            <button class="calcButton number-button" id="lastResult">ans</button>
+            <button class="calcButton" id="equal">=</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/scripts/calc.js"></script>
+  </body>
+
+</html>

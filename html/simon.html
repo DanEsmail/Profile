@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> A Game Of Simon</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="/styles/simon.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-6" id="game-box">
+          <h1 class="digital-font">A Game of Simon</h1>
+          <br>
+          <div class="button-row" id="button">
+            <button id="play" class="settings btn digital-font">Play</button>
+            <button id="clear" class="settings btn digital-font"> clear</button>
+            <button id="change-game" class="settings btn digital-font">Strict</button>
+
+          </div>
+          <br>
+            <div>
+              <button id="green" class="button font"><b> Green</b></button>
+              <button id="red" class="button font"> <b>Red</b></button>
+            </div>
+            <div id="bottom-row">
+              <button id="yellow" class="button font"><b>Yellow</b></button>
+              <button id="blue" class="button font"><b> Blue</b></button>
+            </div>
+
+          <div class="score-box">
+            <p id="game-counter" class="digital-font">Counter: 0</p>
+            <p id="game-mode" class="digital-font">Game Mode: Off</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+      </div>
+    </div>
+      <audio id="green-sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+      </audio>
+      <audio  id="red-sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+      </audio>
+      <audio  id="blue-sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+      </audio>
+      <audio  id="yellow-sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+      </audio>
+        <div="col-sm-2">
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script src="/scripts/simon.js"></script>
+  </body>
+</html>

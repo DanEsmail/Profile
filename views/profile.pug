@@ -1,0 +1,86 @@
+doctype html
+html
+  head
+    title Dan Esmail
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='../styles/profile.css')
+
+  body
+    .container(id="heading")
+      .row
+        .col-sm-4
+        .col-sm-4
+          h1 Daniel Esmail
+          h3 Full Stack Developer
+          img(src="../Images/picture.png", alt="picture of the devolper", class="img-responsive")
+        .col-sm-4
+    .container.nav(id='nav')
+      ul
+        li(class='nav-bar')
+          a(href='#', id="About") About
+        li(class='nav-bar')
+          a(href='#', id="Skills") Skills
+        li(class='nav-bar')
+          a(href='#', id="Projects") Projects
+        li(class='nav-bar')
+          a(href='#', id="Contact") Contact Me
+    .container(id="about-page")
+      h3 About ME
+      br
+      p.
+        I'm a self-taught full mean stack devolper. As of now I have been using websites such as
+        #[a(target="blank", href="https://www.freecodecamp.com/danesmail") Free Code Camp]
+        #[a(target="blank", href="https://teamtreehouse.com/danielesmail") TreeHouse]
+        ,and #[a(target="blank", href="https://www.codeschool.com") code School] to learn how to program. I love to learn how to program and learn new languages.
+    .container(id="skills-page")
+      .row
+        .col-sm-4
+          ul
+            li Html
+            li CSS
+            li Scss
+            li Bootstrap
+        .col-sm-4
+          ul
+            li Javascript
+            li Jquary
+            li Mongo
+            li Mongoose.js
+        .col-sm-4
+          ul
+            li node.js
+            li Express.js
+            li pug
+    .container(id="projects-page")
+      .row
+        .col-md-4
+          .project-box
+            a(href='/projects/volleyball')
+              img(src="../Images/Volleyball.png", class="img-responsive project", alt="Volleyball Rotaion Website")
+            a(href='projects/twitch')
+              img(src="../Images/twitch-pic.png", class="img-responsive project", alt="a website using twitch's api")
+            a(href='projects/weather')
+              img(src="../Images/weather.png", class="img-responsive project", alt="Picture of a weather app")
+        .col-md-4
+          .project-box
+            a(href="projects/simon")
+              img(src="../Images/Simon.png", class="img-responsive project", alt="a game of simon")
+            a(href='projects/ticTacToe')
+              img(src="../Images/Tic Tac Toe.png", class="img-responsive project", alt="a tic tac toe board")
+            a(href='projects/wikiSearch')
+              img(src="../Images/Wiki.png", class="img-responsive project", alt="a tic tac toe board")
+        .col-md-4
+          .project-box
+            a(href='projects/rockQuotes')
+              img(src="../Images/RockQuotes.png", class="img-responsive project", alt="amp with rock qoutes inside")
+            a(href='projects/timer')
+              img(src="../Images/Timer.png", class="img-responsive project", alt="a pomodoro timer")
+            a(href='projects/calc')
+              img(src="../Images/calc.png", class="img-responsive project", alt="picture of a calculator")
+    .container.nav
+      ul
+        li(class="nav-bar")
+          a(targer='blank', href='https://github.com/DanEsmail') Github
+        li(class="nav-bar")
+          a(targer='blank', href='https://www.linkedin.com/in/daniel-esmail-55420435/') Linkdin

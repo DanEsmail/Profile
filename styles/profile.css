@@ -1,0 +1,79 @@
+body{
+    background:url(../Images/footer_lodyas.png)
+}
+
+#heading{
+  text-align: center;
+  background-color: #336b87;
+  color: white;
+}
+
+#heading img{
+  margin-bottom: 10px;
+
+}
+
+.nav {
+  text-align: center;
+  background-color: #696b6f;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+.nav ul .nav-bar {
+  display: inline-block;
+}
+.nav ul .nav-bar a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      .nav ul .nav-bar a:hover {
+        background-color: #336b87;
+        color: white; }
+
+#about-page{
+    background-color: #90AFC5;
+    color:black;
+    height: auto;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+#skills-page{
+    color: white;
+    background-color: #336b87;
+    height: auto;
+    padding: 25px 10px;
+}
+
+#projects-page{
+    background-color: #90AFC5;
+    color: white;
+    height: auto;
+    padding: 20px;
+}
+
+.project-box{
+  margin-bottom: 20px;
+}
+
+img{
+  border: solid black;
+
+}
+
+.project{
+  margin-top: 1em;
+}
+
+.footer{
+  background-color: pink;
+  width: 100%
+}

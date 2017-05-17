@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=New+Rocker);
+
+html{
+  font-size: 16px;
+}
+
+body{
+    background: url("http://i1097.photobucket.com/albums/g352/danesmail29/wood_pattern_zps9o4flpp0.png");
+    text-align: center;
+    font-size: 62.5%;
+}
+
+h1{
+  color: #FB1B1B;
+  font-family: 'New Rocker';
+  font-size: 4em;
+}
+
+#body{
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+#amp{
+  margin-top: 20%;
+}
+
+.button-box{
+
+  height: auto;
+  width: 41.8em;
+  min-height: 14.5em;
+  background: url("/Images/rockImgs/topAmp.png") center center no-repeat;
+
+}
+
+#tweet-button{
+  height: 35px;
+  width: 35px;
+}
+
+#quote-box{
+  background: url("/Images/rockImgs/bottomAmp.png") center center no-repeat;
+  min-height: 56.3em;
+  width: 41.8em;
+  text-align: center;
+}
+#quote-box p{
+
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 15%;
+  font-size: 2em
+}
+
+button{
+  margin-top: 35px;
+  margin-right: 20px;
+  background-color: #222325;
+  border-color: #0D0E11;
+  box-shadow: #0D0E11 -0.05em 0.05em;
+  color: #FB1B1B;
+  font-family: "New Rocker";
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.3em;
+}
+
+.rocker-text{
+  font-family: 'New Rocker';
+  color: #FB1B1B;
+}

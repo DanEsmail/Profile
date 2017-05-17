@@ -1,0 +1,93 @@
+
+body{
+  background-color: #6441a4;
+  text-align: center;
+}
+
+button{
+  margin-bottom: .5em;
+  color: white;
+  background-color: #4552A5;
+  border-color: #2C3B98;
+}
+
+.streamers{
+  margin-bottom: 20px;
+}
+
+#twitch-img{
+  height: 50px;
+  width: 50px;
+}
+
+.font{
+  color: white;
+}
+
+.color{
+  background-color: pink;
+}
+
+
+img{
+  height: 100%;
+  width: 100%;
+}
+.box
+{
+  display: inline-block;
+    width: 30%;
+    height: 100%;
+  vertical-align: top;
+    border-style: solid;
+}
+
+.info{
+  text-align: center;
+}
+
+.test-box{
+  margin-top: 20px;
+  height: 110px;
+  width: 600px;
+  text-align: center;
+}
+
+.test-box *{
+  border-color: black;
+}
+
+.offline *{
+  background: #A80004;
+  color: white;
+}
+
+.offline p{
+  margin-top: 45px;
+}
+
+.offine h3{
+  margin-top: 45px;
+}
+
+.online *{
+  background: #01E500;
+  color: white;
+}
+
+.online .status p{
+  margin-top: 45px;
+}
+
+.closed *{
+  background: grey;
+  color: white;
+}
+
+.closed p{
+  margin-top: 45px;
+}
+
+.closed h3{
+  margin-top: 45px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+    <link rel="stylesheet" type="text/css" href="/styles/weather.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 color">
+
+        </div>
+        <div class="col-xs-8 color">
+          <h1 class="font">Weather App</h1>
+          <p id="location" class="font">City, country</p>
+          <p id="temp" class="font">Tempture</p>
+          <p id="description" class="font">description</p>
+          <div id="tv-outside">
+            <div id="weather-tv">
+              <div id="weather-ground">
+                <div id="weather-sky">
+                  <img id="image" class="img-responsive" src=http://piskel-imgstore-b.appspot.com/img/2cd56c9e-f9d8-11e5-8c20-0f7070c636bb.gif>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" id="new-location">New<br> Location</button>
+            <button id="unit">&degF</button>
+          </div>
+          <div id="loaction-box">
+            <label for="Postal"></label>
+            <input type="text" name="Postal" id="zip" value="Zip Code">
+            <button id="done">Done</button>
+            <button id="cancel">Cancel</button>
+          </div>
+
+        </div>
+        <div class="col-xs-2 color">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/scripts/weather.js"></script>
+  </body>
+</html>
