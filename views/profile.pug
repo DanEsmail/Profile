@@ -18,15 +18,15 @@ html
     .container.nav(id='nav')
       ul
         li(class='nav-bar')
-          a(href='#', id="About") About
+          a(href='#about-page', id="About") About
         li(class='nav-bar')
-          a(href='#', id="Skills") Skills
+          a(href='#skills-page', id="Skills") Skills
         li(class='nav-bar')
-          a(href='#', id="Projects") Projects
+          a(href='#projects-page', id="Projects") Projects
         li(class='nav-bar')
-          a(href='#', id="Contact") Contact Me
+          a(href='#contact-page', id="Contact") Contact Me
     .container(id="about-page")
-      h3 About ME
+      h3 About me
       br
       p.
         I'm a self-taught full mean stack devolper. As of now I have been using websites such as
@@ -34,6 +34,9 @@ html
         #[a(target="blank", href="https://teamtreehouse.com/danielesmail") TreeHouse]
         ,and #[a(target="blank", href="https://www.codeschool.com") code School] to learn how to program. I love to learn how to program and learn new languages.
     .container(id="skills-page")
+      h3 Skill
+      h5 Languages and frameworks
+      br
       .row
         .col-sm-4
           ul
@@ -78,7 +81,7 @@ html
               img(src="../Images/Timer.png", class="img-responsive project", alt="a pomodoro timer")
             a(href='projects/calc')
               img(src="../Images/calc.png", class="img-responsive project", alt="picture of a calculator")
-    .container.nav
+    .container.nav(id="contact-page")
       ul
         li(class="nav-bar")
           a(targer='blank', href='https://github.com/DanEsmail') Github

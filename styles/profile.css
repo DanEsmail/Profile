@@ -1,5 +1,6 @@
 body{
-    background:url(../Images/footer_lodyas.png)
+    background:url(../Images/footer_lodyas.png);
+
 }
 
 #heading{
@@ -51,6 +52,13 @@ body{
     background-color: #336b87;
     height: auto;
     padding: 25px 10px;
+}
+
+#skills-page h3{
+  text-align: center;
+}
+#skills-page h5{
+  text-align: center;
 }
 
 #projects-page{

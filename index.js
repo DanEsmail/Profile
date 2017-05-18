@@ -13,7 +13,7 @@ app.set('views','./views');
 
 
 app.use('/Images', express.static(__dirname + "/Images"));
-app.use('/styles', express.static(__dirname + "/Styles"));
+app.use('/styles', express.static(__dirname + "/styles"));
 app.use('/html', express.static(__dirname + "/html"));
 app.use('/scripts', express.static(__dirname + "/scripts"));
 
