@@ -1,0 +1,25 @@
+.project-nav {
+  text-align: center;
+  background-color: #696b6f;
+}
+
+.project-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+.project-nav ul .project-nav-bar {
+  display: inline-block;
+}
+.project-nav ul .project-nav-bar a {
+      font-size: 1.6em;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      .project-nav ul .project-nav-bar a:hover {
+        background-color: #336b87;
+        color: white; }
