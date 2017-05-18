@@ -1,0 +1,43 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Calculator
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet', type='text/css', href='/styles/calc.css')
+  link(rel='stylesheet', type='text/css', href='/styles/project-nav.css')
+body
+  include ./project-nav.pug
+  .container-fluid.box
+    #calc-outside
+      #display
+        p#equation
+          br
+        p#answer
+      #input-box
+        .button-line
+          button#clear.calcButton.lead-button.delete Clear
+          button#back.calcButton.delete back
+          button#modulus.calcButton.operator %
+          button#divide.calcButton.operator /
+        .button-line
+          button#7.calcButton.number-button.lead-button 7
+          button#8.calcButton.number-button 8
+          button#9.calcButton.number-button 9
+          button#multiply.calcButton.operator *
+        .button-line
+          button#4.calcButton.number-button.lead-button 4
+          button#5.calcButton.number-button 5
+          button#6.calcButton.number-button 6
+          button#minus.calcButton.operator -
+        .button-line
+          button#1.calcButton.number-button.lead-button 1
+          button#2.calcButton.number-button 2
+          button#3.calcButton.number-button 3
+          button#add.calcButton.operator +
+        .button-line
+          button#decimal.calcButton.number-button.lead-button .
+          button#0.calcButton.number-button 0
+          button#lastResult.calcButton.number-button ans
+          button#equal.calcButton =
+  script(src='https://code.jquery.com/jquery-1.11.2.min.js')
+  script(src='/scripts/calc.js')

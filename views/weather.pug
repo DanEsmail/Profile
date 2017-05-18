@@ -1,0 +1,35 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Weather app
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet', type='text/css', href='/styles/weather.css')
+  link(rel='stylesheet', type='text/css', href='/styles/project-nav.css')
+body
+  include ./project-nav.pug
+  .container
+    .row
+      .col-xs-2.color
+      .col-xs-8.color
+        h1.font Weather App
+        p#location.font City, country
+        p#temp.font Tempture
+        p#description.font description
+        #tv-outside
+          #weather-tv
+            #weather-ground
+              #weather-sky
+                img#image.img-responsive(src='http://piskel-imgstore-b.appspot.com/img/2cd56c9e-f9d8-11e5-8c20-0f7070c636bb.gif')
+          button#new-location(type='button')
+            | New
+            br
+            |  Location
+          button#unit &degF
+        #loaction-box
+          label(for='Postal')
+          input#zip(type='text', name='Postal', value='Zip Code')
+          button#done Done
+          button#cancel Cancel
+      .col-xs-2.color
+  script(src='https://code.jquery.com/jquery-1.11.2.min.js')
+  script(src='/scripts/weather.js')

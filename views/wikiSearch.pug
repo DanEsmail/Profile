@@ -1,0 +1,23 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Wikipidia search
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/styles/wiki.css')
+  link(rel='stylesheet', type='text/css', href='/styles/project-nav.css')
+body
+  include ./project-nav.pug
+  .container
+    .col-sm-4
+    .col-sm-4
+      .content
+        h1#title  Wiki Search
+        input(id='box',type='text', name='searchbox')
+        br
+        button#button(type='button') search
+        button
+          a(href='https://en.wikipedia.org/wiki/Special:Random', target='blank') Random
+        ul#list
+    .col-sm-4
+  script(src='https://code.jquery.com/jquery-1.11.2.min.js')
+  script(src='/scripts/wiki.js')
