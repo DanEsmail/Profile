@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Pomodoro Timer
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/styles/timer.css')
+  link(rel='stylesheet', type='text/css', href='/styles/project-nav.css')
+body
+  include ./project-nav.pug
+  .container
+    .roe
+      .col-xs-4
+      .col-xs-4
+        h1 Pomodoro Timer
+        br
+        h4 Take a Break
+        br
+        button#start  Start
+        button#pause  Pause
+        button#stop  Stop
+        br
+        br
+        .clock
+          .fill-clock
+            p#timer 0:00
+        .setup
+          h3 Work Timer
+          .timer-inline
+            button#work-plus +
+            p#work-timer.middle 25:00
+            button#work-minus -
+          br
+          br
+          h3 Break Timer
+          .timer-inline
+            button#break-plus +
+            p#break-timer.middle 5:00
+            button#break-minus -
+      .col-xs-4
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  script(src='/scripts/timer.js')

@@ -14,18 +14,17 @@ app.set('views','./views');
 
 app.use('/Images', express.static(__dirname + "/Images"));
 app.use('/styles', express.static(__dirname + "/styles"));
-app.use('/html', express.static(__dirname + "/html"));
 app.use('/scripts', express.static(__dirname + "/scripts"));
 
 app.get("/", function(req, res){
   res.render("profile")
 })
 
-app.get("/projects/:id", function(req,res){
-  res.sendFile(__dirname + "/html/" + req.params.id +".html")
+app.get("/projects/:id", function(req, res){
+  res.render(req.params.id)
 })
 
-//app.use('/projects', projects)
+
 
 
 app.get("*",function(req,res){

@@ -1,0 +1,42 @@
+doctype html
+head
+  title  A Game Of Simon
+  meta(charset='utf-8')
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet', type='text/css', href='/styles/simon.css')
+  link(rel='stylesheet', type='text/css', href='/styles/project-nav.css')
+body
+  include ./project-nav.pug
+  .container
+    .row
+      .col-md-2
+      #game-box.col-md-6
+        h1.digital-font A Game of Simon
+        br
+        #button.button-row
+          button#play.settings.btn.digital-font Play
+          button#clear.settings.btn.digital-font  clear
+          button#change-game.settings.btn.digital-font Strict
+        br
+        div
+          button#green.button.font
+            b  Green
+          button#red.button.font
+            b Red
+        #bottom-row
+          button#yellow.button.font
+            b Yellow
+          button#blue.button.font
+            b  Blue
+        .score-box
+          p#game-counter.digital-font Counter: 0
+          p#game-mode.digital-font Game Mode: Off
+      .col-md-2
+  audio#green-sound
+    source(src='https://s3.amazonaws.com/freecodecamp/simonSound1.mp3', type='audio/mpeg')
+  audio#red-sound
+    source(src='https://s3.amazonaws.com/freecodecamp/simonSound2.mp3', type='audio/mpeg')
+  audio#blue-sound
+    source(src='https://s3.amazonaws.com/freecodecamp/simonSound3.mp3', type='audio/mpeg')
+  audio#yellow-sound
+    source(src='https://s3.amazonaws.com/freecodecamp/simonSound4.mp3', type='audio/mpeg')

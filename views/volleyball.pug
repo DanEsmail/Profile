@@ -1,0 +1,360 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Volleyball Tracker
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet', type='text/css', href='/styles/volleyball.css')
+  link(rel='stylesheet', type='text/css', href='/styles/project-nav.css')
+body
+  include ./project-nav.pug
+  h1#title  Volleyball Tracker
+  #nav
+    ul
+      li.nav-bar
+        a#create(href='#') Create Team
+      li.nav-bar
+        a#add(href='#') Add Player
+      li.nav-bar
+        a#remove(href='#') Remove Player
+      li.nav-bar
+        a#manage(href='#') Manage Roaster
+      li.nav-bar
+        a#edit(href='#') Edit Player
+      li.nav-bar
+        a#setting(href='#') Settings
+  // Volleyball Court
+  .container-fluid
+    .court
+      .row
+        .col-md-2
+        .inside-court.col-md-7
+          #ten-line
+          .row
+            .col-xs-4.right-side
+              .top-row.zone
+                p#spot3.player.front-left spot3
+              .bottom-row.zone
+                p#spot2.player.back-left spot2
+            .col-xs-4.center-side
+              .top-row.zone
+                p#spot4.player.front-middle spot4
+              .bottom-row.zone
+                p#spot1.player.back-middle spot1
+            .col-xs-4.left-side
+              .top-row.zone
+                p#spot5.player.front-right spot5
+              .bottom-row.zone
+                p#spot6.player.back-right spot6
+        .col-md-3
+          .out
+            ol(reversed='')
+              li#spot7 out 4
+              li#spot8 out 3
+              li#spot9 out 2
+              li#spot10 out 1
+            button#reverse.btn.something  Reverse one
+            button#forward.btn  Forward one
+            select#amount(name='amountPlayers')
+              option(value='6') Six
+              option(value='7') Seven
+              option(value='8') Eight
+              option(value='9') Nine
+              option(value='10') Ten
+  // Creating Team Box
+  .container-fluid
+    #teamBox.transition-box
+      h3 Create Team
+      #teamCreate
+        // Radio Buttons
+        .radio-box
+          label(for='6') Six
+          input(type='radio', name='playerNumber', value='6', checked='checked')
+        .radio-box
+          label(for='7') Seven
+          input(type='radio', name='playerNumber', value='7')
+        .radio-box
+          label(for='8') Eight
+          input(type='radio', name='playerNumber', value='8')
+        .radio-box
+          label(for='9') Nine
+          input(type='radio', name='playerNumber', value='9')
+        .radio-box
+          label(for='10') Ten
+          input(type='radio', name='playerNumber', value='10')
+        // Players
+        #box1.player-form
+          .row
+            .player-box
+              label Player 1
+              br
+              input(type='text', name='player1', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player1-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player1-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player1-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player1-gender', value='female')
+              br
+              br
+            #box2.player-box
+              label Player 2
+              br
+              input(type='text', name='player2', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player2-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player2-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player2-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player2-gender', value='female')
+              br
+              br
+            #box3.player-box
+              label Player 3
+              br
+              input(type='text', name='player3', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player3-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player3-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player3-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player3-gender', value='female')
+              br
+              br
+            #box4.player-box
+              label Player 4
+              br
+              input(type='text', name='player4', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player4-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player4-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player4-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player4-gender', value='female')
+              br
+              br
+            #box5.player-box
+              label Player 5
+              br
+              input(type='text', name='player5', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player5-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player5-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player5-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player5-gender', value='female')
+              br
+              br
+            #box6.player-box
+              label Player 6
+              br
+              input(type='text', name='player6', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player6-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player6-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player6-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player6-gender', value='female')
+              br
+              br
+            #box7.player-box
+              label Player 7
+              br
+              input(type='text', name='player7', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player7-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player7-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player7-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player7-gender', value='female')
+              br
+              br
+            #box8.player-box
+              label Player 8
+              br
+              input(type='text', name='player8', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player8-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player8-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player8-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player8-gender', value='female')
+              br
+              br
+            #box9.player-box
+              label Player 9
+              br
+              input(type='text', name='player9', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player9-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player9-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player9-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player9-gender', value='female')
+              br
+              br
+            #box10.player-box
+              label Player 10
+              br
+              input(type='text', name='player10', placeholder='Players Name')
+              .radio-display
+                label(for='in')  In
+                input(type='radio', name='player10-status', value='in', checked='checked')
+                label(for='out')  Out
+                input(type='radio', name='player10-status', value='out')
+              .radio-display
+                label.gender(for='male')  Male
+                input.gender(type='radio', name='player10-gender', value='male', checked='checked')
+                label.gender(for='female')  Female
+                input.gender(type='radio', name='player10-gender', value='female')
+              br
+              br
+      // Player box End
+      button#create-finish.box-finish  Finished
+      button#create-cancel  Cancel
+  // adding players
+  #addPlayers.transition-box
+    .player-form
+      .player-box
+        label New Player
+        br
+        input(type='text', name='add', placeholder='Players Name')
+        .radio-display
+          label(for='in')  In
+          input(type='radio', name='player-add-status', value='in', checked='checked')
+          label(for='out')  Out
+          input(type='radio', name='player-add-status', value='out')
+        br
+        br
+        .radio-display
+          label.gender(for='male') male
+          input.gender(type='radio', name='player-add-gender', value='male')
+          label.gender(for='female') female
+          input.gender(type='radio', name='player-add-gender', value='female')
+        br
+        br
+      button#add-finish.box-finish  Finished
+      button#add-cancel  Cancel
+  // Removing Players
+  #removePlayer.transition-box
+    .player-form
+      .player-box
+        label Remove Player
+        br
+        input(type='text', name='remove', placeholder='Players Name')
+        br
+        br
+    button#remove-finish.box-finish  Finished
+    button#remove-cancel  Cancel
+  // manage Roaster Box
+  .container
+    #manageRoaster
+      h3 Roaster Manage
+      .player-form
+        #manage-roaster
+          .row
+            .col-xs-4.in
+              h4  In
+            .col-xs-4.manageButtons
+              h4  Manage
+              div
+            .col-xs-4.manage-out
+              h4  Out
+          button#manage-finish.box-finish  Finished
+          button#manage-cancel  Cancel
+  // change player box
+  #change-box
+    h3 Change player
+    .player-form
+      #change
+        select#changePlayer(name='change-player')
+  // Settings
+  .container
+    #Settings-box.transition-box
+      .player-form
+        h3 Settings
+        .row
+          .col-xs-4
+            p Rotate by gender
+            br
+            p Roation spot
+          .col-xs-8
+            .radio-display
+              label(for='off') no
+              input(type='radio', name='gender-matter', value='off', checked='checked')
+              label(for='on') yes
+              input(type='radio', name='gender-matter', value='on')
+            br
+            .radio-display
+              label(for='front-row') To Front
+              input(type='radio', name='rotation', value='front')
+              label(for='back-row') To Back
+              input(type='radio', name='rotation', value='back')
+              label(for='after-serve') After Serve
+              input(type='radio', name='rotation', value='serve', checked='checked')
+        br
+        button#settings-finish.box-finish Finish
+        button#settings-cancel Cancel
+  // Edit Player
+  #edit-player
+    h3 Edit player
+    .player-form
+      select#edit-choose
+      br
+      br
+      input(type='text', name='edit-player-name')
+      br
+      br
+      .radio-display
+        label.gender(for='male') male
+        input.gender(type='radio', name='player-edit-gender', value='male')
+        label.gender(for='female') female
+        input.gender(type='radio', name='player-edit-gender', value='female')
+      br
+      br
+      .radio-display
+        label(for='in')  In
+        input(type='radio', name='player-edit-status', value='in')
+        label(for='out')  Out
+        input(type='radio', name='player-edit-status', value='out')
+      br
+      br
+      button#edit-finish.box-finish Finish
+      button#edit-cancel Cancel
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  script(src='/scripts/volleyball.js')

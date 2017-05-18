@@ -15,12 +15,12 @@ var myFunction = function(loop) {
     $("#list").append(`
       <li>
         <div class='searchresult text-center'>
-          <a class='search-title' href=" + loop[3][i] + ">
-            <b>" + loop[1][i] + "</b>
+          <a class='search-title' href=` + loop[3][i] + `>
+            <b>` + loop[1][i] + `</b>
           </a>
           <br>
           <br>
-          <p class='search-body'>" + loop[2][i] + "</p>
+          <p class='search-body'>` + loop[2][i] + `</p>
         </div>
       </li>`)
   }
