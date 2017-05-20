@@ -3,6 +3,10 @@ body{
 
 }
 
+a{
+  color:black;
+}
+
 #heading{
   text-align: center;
   background-color: #336b87;
