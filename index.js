@@ -20,6 +20,10 @@ app.get("/", function(req, res){
   res.render("profile")
 })
 
+app.get("/projects", function(req,res){
+    res.render("projects")
+})
+
 app.get("/projects/:id", function(req, res){
   res.render(req.params.id)
 })

@@ -22,24 +22,38 @@ html
         li(class='nav-bar')
           a(href='#skills-page', id="Skills") Skills
         li(class='nav-bar')
-          a(href='#projects-page', id="Projects") Projects
+          div(id='dropdown')
+            a(href='/projects', id="Projects") Projects
+              span(class="caret")
+            div(class='dropdown-projects')
+              a(href='/projects/volleyball') Volleyball rotation
+              a(href='/projects/twitch') Twitch api viewer
+              a(href='/projects/weather') Weather app
+              a(href="/projects/simon") Simon game
+              a(href='/projects/ticTacToe') Tic tac toe
+              a(href='/projects/wikiSearch') Wiki search
+              a(href='/projects/rockQuotes') Rock quotes
+              a(href='/projects/timer') Pomodoro timer
+              a(href='/projects/calc') Calculator
+
+
         li(class='nav-bar')
           a(href='#contact-page', id="Contact") Contact Me
+
     .container(id="about-page")
       h3 About me
       br
       p.
-        I’m a self-taught mean full stack developer.
-        I started to want to learn to program when I build my first computer.
-        When I first started to learn I just wanted to get my feet wet, but I was instantly hook.
-        It was a great feeling to be able to just type something into the computer and see it come to life.
-        I have been programing for about a year now, and I use programing for any problem that I’m going to have to face more than once.
-        Some of the sites that I have been learn on are
+        I am a self-taught mean full stack developer.
+        My interest in programming began when I built my first computer back in 2011.
+        Initially, programming caught my interest because the idea of simple text becoming something real, tangible, and useful amazed me.
+        I started to learn the basics and was instantly hooked. I have been programming for around a year now, and I apply it to my everyday life.
+        I coach a youth volleyball team in my free-time, and recently I created a program to help me set up the line-up and rotation for the athletes.
+        Some of the tools I used to help me learn programming include
         #[a(target="blank", href="https://www.freecodecamp.com/danesmail") Free Code Camp,]
         #[a(target="blank", href="https://teamtreehouse.com/danielesmail") TreeHouse]
         ,and #[a(target="blank", href="https://www.codeschool.com") code School]
-        I love to learn new languages and frameworks, because it like playing with a new toy on Christmas.
-         I really want to make a profession out of programing because it something I love to do and have fun with.
+        Learning new languages and frameworks make me feel like a child opening presents on Christmas, and my goal is to take my passion for programming and make a career out of it.
     .container(id="skills-page")
       h3 Skill
       h5 Languages and frameworks
@@ -64,34 +78,26 @@ html
             li pugjs
             li Git
     .container(id="projects-page")
+      h1(id="projects-title") projects
       .row
         .col-md-4
           .project-box
-            a(href='/projects/volleyball')
-              img(src="../Images/Volleyball.png", class="img-responsive project", alt="Volleyball Rotaion Website")
-            a(href='projects/twitch')
-              img(src="../Images/twitch-pic.png", class="img-responsive project", alt="a website using twitch's api")
-            a(href='projects/weather')
-              img(src="../Images/weather.png", class="img-responsive project", alt="Picture of a weather app")
+            a(href='projects/wikiSearch')
+              img(src="../Images/Wiki.png", class="img-responsive project", alt="a picture of a list of of searched items")
+
         .col-md-4
           .project-box
             a(href="projects/simon")
               img(src="../Images/Simon.png", class="img-responsive project", alt="a game of simon")
-            a(href='projects/ticTacToe')
-              img(src="../Images/Tic Tac Toe.png", class="img-responsive project", alt="a tic tac toe board")
-            a(href='projects/wikiSearch')
-              img(src="../Images/Wiki.png", class="img-responsive project", alt="a tic tac toe board")
         .col-md-4
           .project-box
             a(href='projects/rockQuotes')
               img(src="../Images/RockQuotes.png", class="img-responsive project", alt="amp with rock qoutes inside")
-            a(href='projects/timer')
-              img(src="../Images/Timer.png", class="img-responsive project", alt="a pomodoro timer")
-            a(href='projects/calc')
-              img(src="../Images/calc.png", class="img-responsive project", alt="picture of a calculator")
     .container.nav(id="contact-page")
       ul
         li(class="nav-bar")
           a(targer='blank', href='https://github.com/DanEsmail') Github
         li(class="nav-bar")
           a(targer='blank', href='https://www.linkedin.com/in/daniel-esmail-55420435/') Linkdin
+    script(src='https://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='/scripts/profile.js')

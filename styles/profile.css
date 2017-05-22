@@ -28,6 +28,7 @@ a{
   margin: 0;
   padding: 0;
   overflow: hidden;
+
  }
 .nav ul .nav-bar {
   display: inline-block;
@@ -42,6 +43,28 @@ a{
       .nav ul .nav-bar a:hover {
         background-color: #336b87;
         color: white; }
+
+
+
+.dropdown-projects{
+  z-index: 1;
+  position: absolute;
+  background-color: #696b6f;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-projects a{
+  display: block !important;
+  padding-top: -5px;
+}
+
+.dropdown-projects.active{
+  opacity: 1;
+  visibility: visible;
+}
 
 #about-page{
     background-color: #90AFC5;
@@ -74,6 +97,11 @@ a{
 
 .project-box{
   margin-bottom: 20px;
+}
+
+#projects-title{
+  text-align: center;
+  color: black;
 }
 
 img{

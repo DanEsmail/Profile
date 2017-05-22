@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title Dan Esmail
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='../styles/profile.css')
+    link(rel='stylesheet', href='../styles/projects.css')
+    link(rel='stylesheet', type='text/css', href='/styles/project-nav.css')
+  body
+    include ./project-nav.pug
+    .container(id="projects-page")
+      h1 Projects
+      .row
+        .col-md-4
+          .project-box
+            a(href='/projects/volleyball')
+              img(src="../Images/Volleyball.png", class="img-responsive project", alt="Volleyball Rotaion Website")
+            a(href='projects/twitch')
+              img(src="../Images/twitch-pic.png", class="img-responsive project", alt="a website using twitch's api")
+            a(href='projects/weather')
+              img(src="../Images/weather.png", class="img-responsive project", alt="Picture of a weather app")
+        .col-md-4
+          .project-box
+            a(href="projects/simon")
+              img(src="../Images/Simon.png", class="img-responsive project", alt="a game of simon")
+            a(href='projects/ticTacToe')
+              img(src="../Images/Tic Tac Toe.png", class="img-responsive project", alt="a tic tac toe board")
+            a(href='projects/wikiSearch')
+              img(src="../Images/Wiki.png", class="img-responsive project", alt="a picture of a list of of searched items")
+        .col-md-4
+          .project-box
+            a(href='projects/rockQuotes')
+              img(src="../Images/RockQuotes.png", class="img-responsive project", alt="amp with rock qoutes inside")
+            a(href='projects/timer')
+              img(src="../Images/Timer.png", class="img-responsive project", alt="a pomodoro timer")
+            a(href='projects/calc')
+              img(src="../Images/calc.png", class="img-responsive project", alt="picture of a calculator")
