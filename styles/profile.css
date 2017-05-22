@@ -46,7 +46,7 @@ a{
 
 
 
-.dropdown-projects{
+#dropdown-projects{
   z-index: 1;
   position: absolute;
   background-color: #696b6f;
@@ -56,12 +56,12 @@ a{
 
 }
 
-.dropdown-projects a{
+#dropdown-projects a{
   display: block !important;
   padding-top: -5px;
 }
 
-.dropdown-projects.active{
+#dropdown-projects.active{
   opacity: 1;
   visibility: visible;
 }

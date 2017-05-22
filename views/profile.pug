@@ -13,7 +13,7 @@ html
         .col-sm-4
           h1 Daniel Esmail
           h3 Full Stack Developer
-          img(src="../Images/picture.png", alt="picture of the devolper", class="img-responsive")
+          img(src="../Images/picture.png", alt="picture of the developer", class="img-responsive")
         .col-sm-4
     .container.nav(id='nav')
       ul
@@ -23,9 +23,10 @@ html
           a(href='#skills-page', id="Skills") Skills
         li(class='nav-bar')
           div(id='dropdown')
-            a(href='/projects', id="Projects") Projects
+            a(href='#', id="Projects") Projects
               span(class="caret")
-            div(class='dropdown-projects')
+            div(id='dropdown-projects')
+              a(href='/projects') All Projects
               a(href='/projects/volleyball') Volleyball rotation
               a(href='/projects/twitch') Twitch api viewer
               a(href='/projects/weather') Weather app
@@ -78,7 +79,7 @@ html
             li pugjs
             li Git
     .container(id="projects-page")
-      h1(id="projects-title") projects
+      h1(id="Projects-title") projects
       .row
         .col-md-4
           .project-box
