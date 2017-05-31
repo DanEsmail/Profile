@@ -90,9 +90,20 @@ a{
 
 #projects-page{
     background-color: #90AFC5;
-    color: white;
+    color: black;
     height: auto;
     padding: 20px;
+    text-align: center;
+}
+
+#projects-page button{
+  background-color: #6087A1;
+  border-color: #3D6887;
+  box-shadow: -3px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+#projects-page button:active{
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
 
 .project-box{

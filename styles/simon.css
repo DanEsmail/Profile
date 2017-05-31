@@ -1,57 +1,70 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700);
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
-.font{
-  font-family: 'Fira Sans', sans-serif;
-  color: black;
+html{
+  font-size: 16px;
 }
 
 body{
   background: black;
   text-align: center;
+  font-size: 62.5%;
 }
-.settings{
+
+
+
+.font{
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+}
+ .top.instructions{
+   border-bottom: solid #00AF27;
+   font-size: 1.8em;
+ }
+.instructions{
+  color: white;
+  font-size: 1.6em;
+}
+
+.controls{
   background: #025E6F;
   border-color: #014B59;
-  margin: 5px;
+  margin: .5em;
   color: #22C145 !important;
 }
-.button{
-  height: 200px;
-  width: 200px;
-  margin-left: 10px;
-  margin-top: 10px;
+.simon-button{
+  height: 12em;
+  width: 12em;
+  margin-left: 1em;
+  font-size: 1.6em;
+  color: white;
 }
 #red{
   background-color: #7F1615;
   border-color: #A93838;
-  color: black;
+
 }
 #green{
   background-color: #357F20;
   border-color: #57A243;
-  margin-right: .3em;
+
 }
 #yellow{
   background-color: #BFA613;
   border-color: #E1C832;
-  margin-right: .3em;
+
 }
 #blue{
   background-color: #26467F;
   border-color: #3E5B90;
 }
 #bottom-row{
-  margin-top: 15px;
-}
-
-.button-row{
-  margin-top: 10px;
+  margin-top: 1.5em;
 }
 
 .score-box{
-  margin-top: 20px;
-  font-size: 16px;
+  margin-top: 2em;
+  font-size: 1.6em;
 }
 
 #game-box{
