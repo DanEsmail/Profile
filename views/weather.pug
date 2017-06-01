@@ -13,21 +13,24 @@ body
       .col-xs-8.color
         h1.font Weather App
         p#location.font City, country
-        p#temp.font Tempture
+        p#temp.font Temperature
         p#description.font description
+        button#new-location(type='button')
+          | New
+          br
+          |  Location
+        button#unit &degF
         #tv-outside
+
           #weather-tv
             #weather-ground
               #weather-sky
                 img#image.img-responsive(src='http://piskel-imgstore-b.appspot.com/img/2cd56c9e-f9d8-11e5-8c20-0f7070c636bb.gif')
-          button#new-location(type='button')
-            | New
-            br
-            |  Location
-          button#unit &degF
+
+
         #loaction-box
           label(for='Postal')
-          input#zip(type='text', name='Postal', value='Zip Code')
+          input#zip(type='text', name='Postal', placeholder='Zip Code')
           button#done Done
           button#cancel Cancel
       .col-xs-2.color

@@ -5,16 +5,44 @@ var key = "41ac040badaa3b69dea1c0c3533dcec8"
 var weatherHttp = "http://api.openweathermap.org/data/2.5/weather?zip="
 var weather = 1;
 var temp;
+var unitState = "C"
+var oldZip = ""
+
+
 
 function changeUnit(){
   if($("#unit").html()[1] == "F"){
-      $("#temp").html("Tempture: " + (((temp-273.15)*(9/5))+32).toFixed(0) + "&degF")
+      $("#temp").html("Temperature: " + (((temp-273.15)*(9/5))+32).toFixed(0) + "&degF")
       $("#unit").html("&degC")
   }else{
-      $("#temp").html("Tempture: " + (temp-273.15).toFixed(1) + "&degC")
+      $("#temp").html("Temperature: " + (temp-273.15).toFixed(1) + "&degC")
       $("#unit").html("&degF")
   }
 }
+
+function units(state){
+  if(state == "change"){
+    if(unitState == "C"){
+      $("#temp").html("Temperature: " + (((temp-273.15)*(9/5))+32).toFixed(0) + "&degF")
+      $("#unit").html("&degC")
+      unitState = "F"
+    }else{
+      $("#temp").html("Temperature: " + (temp-273.15).toFixed(1) + "&degC")
+      $("#unit").html("&degF")
+      unitState = "C"
+    }
+  }else{
+    if(unitState == "F"){
+      $("#temp").html("Temperature: " + (((temp-273.15)*(9/5))+32).toFixed(0) + "&degF")
+      $("#unit").html("&degC")
+    }else{
+      $("#temp").html("Temperature: " + (temp-273.15).toFixed(1) + "&degC")
+      $("#unit").html("&degF")
+    }
+  }
+
+}
+
 
 function changeScreen(num){
   if (num >= 200 & num <= 232) {
@@ -54,8 +82,8 @@ function getWeather(zip){
 
 function createLocation(obj){
   $("#location").html(obj["name"] + ", " + obj["sys"]["country"])
-  $("#temp").html("Tempture: " + (obj["main"]["temp"]-273.15).toFixed(1) + "&degC")
   $("#description").html(obj['weather'][0]["description"])
+  units("stay")
 }
 
 $(document).ready(function(){
@@ -67,16 +95,21 @@ $(document).ready(function(){
     getWeather(mainPostal)
   })
   $("#unit").on("click", function(){
-    changeUnit()
+
+    units("change")
   })
   $("#new-location").on("click", function(){
     $("#loaction-box").addClass("active")
   })
   $("#done").on("click", function(){
+    oldZip = $("#zip").val()
     getWeather($("#zip").val())
+    $("#zip").val('');
+    $("#zip").attr("placeholder", oldZip)
+
     $("#loaction-box").removeClass("active")
   })
-  $("cancel").on("click", function(){
+  $("#cancel").on("click", function(){
     $("#loaction-box").removeClass("active")
   })
 
