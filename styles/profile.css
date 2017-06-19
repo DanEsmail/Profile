@@ -128,3 +128,8 @@ img{
   background-color: pink;
   width: 100%
 }
+
+#about-page p a{
+  color: blue;
+  text-decoration: underline;
+}
